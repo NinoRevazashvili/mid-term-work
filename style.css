@@ -1,6 +1,11 @@
-body{
+/* body{
     max-width: 1920px;
     width: 100%;
+    background: #F2F2F2;
+} */
+.mainclass{
+    max-width: 1920px;
+    margin: 0 auto;
     background: #F2F2F2;
 }
 header{
@@ -104,11 +109,12 @@ section{
     grid-template-columns: auto auto;
 }
 .right-container-image{
-    width: 1225px;
-    height: 751px;
+    max-width: 1225px;
+    width: 100%;
+    /* height: 751px; */
     border-radius: 24px;
     margin-left: 20px;
-    margin-right: 140px;
+    /* margin-right: 140px; */
      position: absolute;  
 }
 h1{
@@ -146,4 +152,104 @@ display: relative;
     background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
     background-size: 20px;
     background-position: 290px 12px;
+}
+/* section2 */
+.section2{
+   display: grid;
+   grid-template-columns: repeat(4, auto);
+}
+
+.section2-block{
+max-width: 395px;
+width: 100%;
+/* height: 424px; */
+border-radius: 24px;
+background: #F8F8F8;
+ margin-left: 140px;  
+margin-top: 50px;
+margin-bottom: 20px;
+margin-right: 20px;  
+}
+.h3-section2{
+color: #000;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 20px;
+margin-top: 70px; 
+}
+.image-section2{
+    width: 363px;
+height: 202px;
+border-radius: 20px;
+margin: 16px;
+/* position: relative; */
+}
+.section2-h3{
+color: #000;
+font-family: font-header;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+ margin-left: 20px;
+margin-bottom: 8px; 
+
+}
+.section2-h5{
+color: #000;
+font-family: font-header;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ margin-left: 20px;
+margin-top: 8px; 
+}
+.section2-price{
+color: #29B24E;
+text-align: right;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 258px;
+margin-bottom: 16px;
+
+}
+.border-style{
+border-bottom-style: solid #CFEAD6;
+width: 395px;
+height: 1px;
+border-radius: 2px;
+background-color: #CFEAD6;
+}
+.section2-p{
+
+    position: absolute;
+    text-align: start;
+    margin-left: 39px;
+    margin-top: 34px;
+    
+}
+.position-image-text{
+    position: relative;
+}
+.section2-secondblock{
+    display: flex;
+}
+/* ეს შესასწორებელი მაქვს დაშორებები price ის გამო ისიც დასასრულე */
+p{
+ margin-right: 60px;
+margin-left: 10px;
+margin-top: 10px; 
+color: #000;
+font-family: font-header;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
