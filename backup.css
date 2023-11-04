@@ -1,43 +1,35 @@
-  body{
-    background: #F2F2F2;
-    /* overflow-x: hidden;  */
-}  
-@media (max-width: 768px) {
-    .body{
-        display: block;
-       
-    }
-    }
-
-.container{
+body{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
     padding-left: 140px;
     padding-right: 140px;
-}
+    background: #F2F2F2;
+    position: relative;
+     overflow-x: hidden;  
+  }
+  
 
-/* @media (max-width: 768px) {
-    .container{
+.box{
+    display: flex;
+    /* padding-left: 140px;
+    padding-right: 140px; */
+}
+@media (max-width: 768px) {
+    .box{
 display: block;
     }
-} */
-  
-.search-form{
-    display: flex;
-}
-
-.search-space{
-    display: block;
 }
 header{
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 100%;
-    margin: 0 auto;
+    
 }
 
 .header-ul-class{
     display: grid;
-    grid-template-columns: 70px 70px 70px 70px;
-    margin-left: 300px;
+    grid-template-columns: auto auto auto auto;
+    margin-right: 48px;
     margin-top: 54px;
     color:#000000E5;
     font-family: font-header;
@@ -51,38 +43,47 @@ header{
 display: none;
     }
 }
+
 nav ul li:first-child { 
-    border-bottom-style: solid;
-    border-bottom-color: #29B24E;
-    width: 30px;
+     border-bottom-style: solid;
+     border-bottom-color: #29B24E;
+     width: 30px;
 }
 
-
 .logoheader{
-   max-width: 48px;
-   width: 100%;
-   margin-left: 140px;
-   margin-top: 42px;
-   margin-bottom: 41px;
+    max-width: 48px;
+    width: 100%;
+    margin-left: 140px;
+    margin-top: 42px;
+    margin-bottom: 41px;
 
 }
 .sellsomething-header{
-   padding: 13px 26px;
-   width: 156px;
-   height: 47px;
-   border-radius: 12px;
-   background: #29B24E;
-   color: #FFF;
-   font-family: font-header;
-   font-size: 14px;
-   font-style: normal;
-   width: 104px;
-   height: 21px;
-   margin-right: 138px;
-   margin-top: 42px;
-   margin-bottom: 32px;
-   margin-left: 481px;
-   text-decoration: none;
+    padding: 13px 26px;
+    width: 156px;
+    height: 47px;
+    border-radius: 12px;
+    background: #29B24E;
+    color: #FFF;
+    font-family: font-header;
+    font-size: 14px;
+    font-style: normal;
+    width: 104px;
+    height: 21px;
+    margin-right: 138px;
+    margin-top: 42px;
+    margin-bottom: 32px;
+    text-decoration: none;
+
+}
+.image-none{
+width: 18px;
+height: 18px;
+flex-shrink: 0;
+padding: 13px 13px;
+border-radius: 24px;
+background: #F8F8F8;
+display: none;
 }
 @media (max-width: 1024px) {
     .sellsomething-header{
@@ -95,84 +96,67 @@ nav ul li:first-child {
     }
     
     }
-.image-none{
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    padding: 13px 13px;
+
+
+
+.search-form{
+     max-width: 395px;
+     width: 100%;
     border-radius: 24px;
     background: #F8F8F8;
-    display: none;
-    }
-    @media (max-width: 1024px) {
-        .sellsomething-header{
-            display: none;   
-        }
-        .image-none{
-            display: flex;
-            margin-top: 40px;
-            margin-left: 22px;
-        }
-        
-        }
-        .search-form{
-            max-width: 395px;
-            width: 100%;
-            height: 751px;
-           border-radius: 24px;
-           background: #F8F8F8;
-           box-shadow: 0px 4px 25px 0px rgba(194, 194, 194, 0.31);
-       
-       }
-       h4{
-        color: #000;
-        font-family: font-header;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        margin-left: 32px; 
-        margin-top: 32px;
-    }
-    .form-select{
-        width: 331px;
-        height: 48px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        border: 1px solid rgba(13, 156, 164, 0.21);
-        background: #F8F8F8;
-        color: #000;
-        font-family: font-header;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-left:32px;
-        margin-top: 16px;
-        margin-bottom: 32px;
-    }
-    .form-check{
-        color: #000;
-        font-family: Poppins;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-left: 32px;
-        margin-bottom: 10px;
-    }
+    box-shadow: 0px 4px 25px 0px rgba(194, 194, 194, 0.31);
 
-.form-control{
-    position:absolute;
-    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
-    background-size: 20px;
-    background-position: 290px 12px;
+}
+@media (max-width: 1024px) {
+    .left-container{
+        width: 375px;
+height: 739px;
+flex-shrink: 0;
+    }
+   
+    
+    }
+h4{
+    color: #000;
+    font-family: font-header;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 32px; 
+}
+.form-select{
+    width: 331px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(13, 156, 164, 0.21);
+    background: #F8F8F8;
+    color: #000;
+    font-family: font-header;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left:32px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.form-check{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 32px;
+    margin-bottom: 10px;
+}
+section{
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-
-    .search-main{
-        margin-left: 20px;
-    }
 .right-container-image{
     max-width: 1125px;
      height: 751px;;
@@ -181,6 +165,19 @@ nav ul li:first-child {
     margin-left: 20px;
       position: absolute;   
 }
+
+@media (max-width: 1024px) {
+    .right-container-image{
+        width: 335px;
+        height: 435px;
+        flex-shrink: 0;
+    }
+    }
+   
+    
+    
+
+
 
 h1{
     position: relative;
@@ -196,29 +193,50 @@ h1{
     position: relative;
 }
 .form-floating{
-    display:inline-block;
+    display: inline-block;
 } 
+
+/* .right-container-logo{
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-left: 200px;
+    background-color:#29B24E;
+    display: relative;
+
+} */
+
 .form-control{
     width: 324px;
     height: 48px;
     margin-left: 500px;
     margin-top: 80px;
-  
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+    background-size: 20px;
+    background-position: 290px 12px;
 }
+
+
 .tradingAds a {
     display: grid;
-     grid-template-columns: repeat(4, 395px); 
+     grid-template-columns: repeat(4, auto); 
     text-decoration: none;
+
+   
+
+
 }
 .section2-block{
-    width: 395px;
-     height: 424px; 
+    max-width: 395px;
+    width: 100%;
+    margin: 0 auto;
+    /* height: 424px; */
     border-radius: 24px;
     background: #F8F8F8; 
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
-   
+    margin-left: 140px;  
+    column-gap: 20px;
 }
 .h3-section2{
     color: #000;
@@ -308,13 +326,11 @@ font-weight: 400;
 line-height: normal;
 }
 
-
 .footer{
-      position: relative; 
+    max-width: 1920px; 
+     margin: 0 auto; 
     width: 100%;
-     margin: 0;
-    padding: 0;     
-     box-sizing: border-box; 
+    height: 179px;
     background-color: #29B24E;
     position: absolute;
     display: flex;
@@ -323,8 +339,7 @@ line-height: normal;
 .footer-ul-class{
      display:grid;
      grid-template-columns: 70px 70px 70px 70px;
-     margin-left: 140px;
-    padding-right: 48px;
+    margin-right: 48px;
     margin-top: 54px;
     font-family: font-header;
     font-size: 14px;
@@ -335,8 +350,6 @@ line-height: normal;
     text-decoration: none;
     color: #FFF;
 }
-
-
 footer li a{
     color: #FFF;
     list-style: none;
@@ -355,7 +368,7 @@ footer li a{
 }
 
 
-.footer-p{
+footer p{
     color: #FFF;
     font-family: Poppins;
     font-size: 14px;
@@ -364,8 +377,8 @@ footer li a{
     line-height: normal;
     margin-top: 32px;
     margin-bottom: 65px;
-    margin-left: 368px;
-    margin-right: 347px;
+    margin-left: 365px;
+    margin-right: 365px;
   
 }
 .footer-p2{
@@ -392,17 +405,13 @@ footer li a{
 background: #F2F2F2;
 }
 .homeinternal-box{
-    display: block;
-    padding-left: 140px;
-    padding-right: 140px;
-}
-.parent-twodiv{
     display: flex;
 }
 .homeinternal-image{
     width: 810px;
 height: 732px;
 border-radius: 20px;
+margin-left: 140px;
 margin-top: 58px;
 margin-right: 44px;
 margin-bottom: 72px;
@@ -411,7 +420,6 @@ object-fit: fill;
 
 .homeinternal-rightblock{
 max-width: 789px;
-height: 800px;
 width: 100%;
 flex-shrink: 0;
 border-radius: 24px;
@@ -621,22 +629,9 @@ line-height: 23px; /* 164.286% */
     line-height: normal;
 
 }
-.picture-container{
+.homeinternal-mainbox{
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
-.footer-box{
-    position: relative; 
-    width: 100%;
-     margin: 0;
-    padding: 0;     
-     box-sizing: border-box; 
-    background-color: #29B24E;
-    position: absolute;
-    display: flex;
-    margin-top: 120px;
-}
 
 
-
-    
